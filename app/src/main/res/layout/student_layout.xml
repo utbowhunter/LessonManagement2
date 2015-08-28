@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textViewStudentInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:text="STUDENT INFO ..."
+        android:textColor="#010101"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:hint="@string/student_full_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dateBirthday"
+        style="@style/EditTextStyle"
+        android:layout_width="151dp"
+        android:hint="@string/student_birth_date"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editTextFullAddress"
+        style="@style/EditTextStyle"
+        android:hint="@string/student_full_address"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/editTextParentNames"
+        style="@style/EditTextStyle"
+        android:hint="@string/parent_names"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextContactPhone"
+        style="@style/EditTextStyle"
+        android:hint="@string/contact_phone"
+        android:inputType="textPhonetic" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        style="@style/EditTextStyle"
+        android:hint="@string/contact_email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/numberRate"
+        style="@style/EditTextStyle"
+        android:layout_width="93dp"
+        android:hint="@string/default_lesson_rate"
+        android:inputType="numberDecimal" />
+
+
+    <EditText
+        android:id="@+id/editTextNotes"
+        style="@style/EditTextStyle"
+        android:layout_weight="1"
+        android:ems="30"
+        android:hint="@string/notes"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:text="@string/save_button" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:text="@string/cancel_button" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

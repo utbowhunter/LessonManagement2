@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:weightSum="1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="20dp"
+        android:weightSum="1"
+        android:id="@+id/studentInfo"
+        android:layout_weight="0.45">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Info ..."
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:inputType="textPersonName"
+            android:id="@+id/editTextFullName"
+            android:hint="@string/student_full_name"
+            />
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:inputType="date"
+            android:id="@+id/editTextBirthday"
+            android:hint="@string/student_birth_date"/>
+
+            <EditText
+                 android:inputType="textPostalAddress"
+                android:id="@+id/editTextStreetAddress"
+                android:hint="@string/student_full_address"
+                style="@style/EditTextStyle" />
+
+            <EditText
+                android:inputType="textPhonetic"
+                android:id="@+id/editTextPhone"
+                android:hint="@string/contact_phone"
+                style="@style/EditTextStyle" />
+
+            <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/editTextContactEmail"
+            android:hint="@string/contact_email"
+            style="@style/EditTextStyle" />
+        <EditText
+            android:inputType="textPersonName"
+            android:id="@+id/editTextParentNames"
+            android:hint="@string/parent_names"
+            style="@style/EditTextStyle" />
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:layout_weight="0.50"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:hint="@string/notes"
+            android:id="@+id/editTextNotes" />
+
+
+    </LinearLayout>
+</LinearLayout>
+
